@@ -115,7 +115,7 @@ store = {
 Para tener acceso a los datos globales, debe importar el contexto:
 ```jsx
 // importa el contexto en el mismo fichero de tu vista
-import Context from '/path/to/store/appContext.jsx';
+import { Context } from '/path/to/store/appContext.jsx';
 
 const MyView = () => {
     // utiliza el hook useContext
