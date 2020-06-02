@@ -8,7 +8,7 @@
 	"difficulty": "intermediate",
 	"technologies": ["react.js", "html/css"],
 	"syntax": "react.js",
-	"duration" : 24,
+	"duration" : 36,
 	"description" : "Use React and HTTP Fetch to create a Meetup.com clone",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },

@@ -1,15 +1,15 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Meetup Clone with Context
+# Meetup Clone with Context API
 
 Technologies: HTML, CSS, JS, React, React Hooks, React Router and React Context API.
+
+👆This project is optimized for groups of 2 or max 3 students.
 
 Hello! It is time to begin creating professional front-end applications. This time
 we will be building a small Meetup.com clone that allows users to Browse and RSVP events, very similar to how Meetup.com works.
 
-**Event**s are the main Entity on this application, the main view (Home) will have a list of **Event**s organized by date.
-Each **Event** is linked to _a single **Group**_.
-A **Group** can be linked to _one or more_ **Event**s.
-
-_This project is optimized for groups of 2-3 students._
+- **Event**'s is the main Entity on this application, the main view (Home) will have a list of **Event**'s organized by date.
+- Each **Event** is linked to _a single **Group**_.
+- A **Group** can be linked to _one or more_ **Event**'s (one to many).
 
 ## This project is meant to be done in two phases
 
@@ -18,27 +18,33 @@ Secondly, we should implement dynamic data display.
 
 ### Phase 1: Create the views, then link them with React Router in your Layout Component.
 
-Each group must create the projects ***view components***:
+Each group must create the following views:
 
 - Home (List of Events)
 - Event detail (View of a specific Event)
-- Group detail (View for the Group with a list of upcomming events for the group)
+- Group detail (View for the Group with a list of upcoming events for the group)
 
-***NOTE:*** You should draw wireframes first to gather your ideas. Also, make sure to use dummy content initially. PLEASE USE MEETUP.COM AS A DESIGN REFERENCE!
+```txt
+🗒NOTE: You should draw wireframes first to gather your ideas. Also, make sure to use dummy content initially. PLEASE USE MEETUP.COM AS A DESIGN REFERENCE!
+```
 
-#### Each Group must have
+Each **Group** entity must have
 
+```txt
 - Title
 - Description
 - Members
+```
 
-#### Each Event must have
+Each **Event** Entity must have
 
+```txt
 - Title
 - Description
 - Date
 - Time
 - Group (This is an ID for the group)
+```
 
 After you finish your wireframes, get to coding. Please make sure to only use functional components and if you need to define state variables or do something during the component lifecycle, use the corresponding hooks. (`useState()` and `useEffect()`)
 
@@ -47,13 +53,10 @@ After you finish your wireframes, get to coding. Please make sure to only use fu
 ***REMEMBER:*** Anchor tags will cause a redirect, which you don't want in React. Be sure to import and use the ```Link``` component from React Router to implement the navigation between views.
 
 ```jsx
-...
 
 <Link to="/event">
     Title of event
 </Link>
-
-...
 ```
 
 ### Phase 2: Make the app dynamic by implementing React Context
@@ -118,30 +121,20 @@ store: {
 };
 ```
 
-In order to have access to the global data from your store in one of your components, you must import the context consumer. See the example below.
+In order to have access to the global data from your store in one of your components, you must import the Context. See the example below.
 
 ```jsx
 
-import {Consumer} from '/path/to/store/appContext.jsx';
+import Context from '/path/to/store/appContext.jsx';
 
-...
-
-//Then use the Consumer within your return
-    return(
-        <Consumer>
-            {
-                ({store}) => { //When you destructure the store here, you can also pass actions.
-                    //Then you can use the data structure within store into
-                    return (<span> hello, {store.events[0].post_title} </span>);
-                }
-            }
-        </Consumer>
-    );
-...
-
+const MyView = () => {
+    const { actions, store } = useContext(Context);
+    //Then use the Consumer anywhere on the component
+    return (<span> hello, {store.events[0].post_title} </span>);
+}
 ```
 
-All of your Fetch/AJAX calls will be in the ```useEffect()``` section of the appContext.jsx file. Due to the way the boilerplate is built, this area handles the calls that are done only at the initial load of your application.
+All of your Fetch/AJAX calls should be in the `useEffect()` section of the `appContext.js` file. Due to the way the boilerplate is built, this area handles the calls that are done only at the initial load of your application.
 
 ## How to start
 
@@ -149,52 +142,10 @@ Start with the React boilerplate.
 
 ### Steps to use the boilerplate with Gitpod
 
-1. Login to `student.breatheco.de`
-2. From the left navigation, click on `</> Start New Project`
-3. In the main panel, select `New React Flux`
+1. Create a new project using the React Flux boilerplate.
+2. Install the dependencies `$ npm install`.
+3. Run the WebPack development `$ npm run start`.
+4. That's it! Time to code.
 
-### Steps to install the boilerplate locally (Mac/Linux)
-
-Note: breathecode-cli uses nvm 8:
-
-```$ nvm install 8```
-
-```$ nvm use 8```
-
-#### 0. Make sure you have breathecode-cli installed in your environment. [Detailed instructions](https://www.npmjs.com/package/@breathecode/breathecode-cli)
-
-In your terminal, run the command:
-
-```bash
-npm install -g breathecode-cli
-```
-
-#### 1. Start the React boilerplate
-
-In your terminal, run the command:
-
-```bash
-bc start:react-project
-```
-
-#### 2. Install the /node_modules
-
-In your terminal, run the command:
-
-```bash
-npm install
-```
-
-#### 3. Run the webpack development server
-
-In your terminal, run the command:
-
-```bash
-npm run dev-server
-```
-
-That's it! Time to code.
-
-_"The scariest moment is always before you start"_
-
--_Stephen King_
+> _"The scariest moment is always before you start"_
+> _Stephen King_

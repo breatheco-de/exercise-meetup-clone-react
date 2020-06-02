@@ -1,29 +1,30 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application 
+# Meetup Clone with Context API
 
 Tecnologias: HTML, CSS, JS, React, React Router and React Context API.
+
+Este ejemplo esta optimizado para grupos de dos o maximo tres estudiantes.
 
 ¡Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez
 Crearemos una pequeña aplicación de Meetup.com que permita a los usuarios navegar y confirmar eventos, muy similar a cómo funciona Meetup.com.
 
-**Event**s  son la entidad central en el sistema, la vista principal (Home) tendrá una lista de **Event**s organizado por fechas.
-Cada **Event** esta vinculado _a single **Meetup**_.
-Un **Meetup** puede ser vinculado _one or more_ **Event**s.
+- **Event**'s  son la entidad central en el sistema, la vista principal (Home) tendrá una lista de **Event**'s organizado por fechas.
+- Cada **Event** esta vinculado _a single **Meetup**_.
+- Un **Meetup** puede ser vinculado _uno a muchos_ **Event**s (one to many).
 
-_Optimizado para grupos de 2-3 estudiantes._
 
 ## Este proyecto está destinado a realizarse en dos fases.
 
-Primero queremos enfocarnos en las imágenes, asegurarnos de que las estructuras visibles estén funcionando correctamente.
-En segundo lugar, debemos implementar la visualización dinámica de datos.
+1. Primero queremos enfocarnos en las imágenes, asegurarnos de que el front HTML/CSS y los componentes estén funcionando correctamente.
+2. En segundo lugar, debemos implementar las llamadas fetch al backend y volver "dinámica" la aplicación con data real obtenida de la base de datos.
 
 ### Fase 1: Crea las vistas, luego vincúlalas con React Router en su componente de diseño.
 
-Cada grupo debe crear los proyectos ***ver componentes***: 
+Cada grupo debe crear las vistas: 
 - Home (Lista de Eventos)
 - Detalle del Event
 - Detalle del Meetup
 
-Usa contenido ficticio inicialmente.
+Usa contenido/data ficticia inicialmente, lo importante es que se vea bien.
 
 En Meetup.com, Meetups son los grupos u organizaciones anfitrionas de los eventos. 
 
@@ -42,19 +43,15 @@ En contraste, los eventos son los eventos específicos que el grupo está organi
 - Meetup
 
 
-
 Nota: Piensa en DRY (Don't repeat yourself) y declara solo ***un*** componente y usa ```props``` para manejar una estructura similar pero contenido diferente.
 
-RECUERDA: Las etiquetas de anclaje provocarán un redireccionamiento, que no deseas en React. Asegúrate de usar el componente ``` Link ``` de React Router para implementar la navegación entre vistas.
+RECUERDA: Las etiquetas `<a>` provocarán un redireccionamiento, que no deseas en React. En lugar de etiquetas `<a>` Asegúrate de usar el componente `<Link>` de React Router para implementar la navegación entre vistas.
 
 ```jsx
-...
 
 <Link to="/event">
 	Title of event
 </Link>
-
-...
 ```
 
 
@@ -113,64 +110,27 @@ store = {
 
 Para tener acceso a los datos globales, debe importar el contexto:
 ```jsx
+// importa el contexto en el mismo fichero de tu vista
+import Context from '/path/to/store/appContext.jsx';
 
-import {Context} from '/path/to/store/appContext.jsx';
-
-...
-
-//Then use the Consumer within the render method
-    render(){
-        return(
-            <Context.Consumer>
-                {
-                    ({store}) => {
-                        //Then you can use the data structure within store into 
-                        return (<span> hello, {store.events[0].post_title} </span>);
-                        
-                    }
-                }
-            </Context.Consumer>
-        );
-    }
-...
+const MyView = () => {
+    // utiliza el hook useContext
+    const { actions, store } = useContext(Context);
+    //Luego puedes utilizar actions y store donde prefieras en el codigo de tu vista
+    return (<span> hello, {store.events[0].post_title} </span>);
+}
 
 ```
 
-Todo tu Fetch/AJAX estará en la sección ```componentDidMount()``` del archivo appContext.jsx.
+Todo tu Fetch/AJAX estará en la sección `useEffect()` del archivo appContext.jsx.
 
 ### ¿Como empezar?
 
-Comienza con el boilerplate (plantilla) de React.
+1. Comienza con el boilerplate (plantilla) de **React FLUX**.
+2. Instala las dependencias del projecto con `$ npm install`
+3. Ejecuta el servidor de desarrollo de webpack con `$ npm run start`
+4. ¡Listo! Empieza a trabajar.
 
-## Pasos para instalar el boilerplate
-
-Nota: breathecode-cli usa nvm 8:
-
-```$ nvm install 8```
-
-```$ nvm use 8```
-
-##### 0. Asegúrate de tener instalado el breathecode-cli en tu entorno. [Instrucciones detalladas](https://www.npmjs.com/package/@breathecode/breathecode-cli)
-```
-$ npm install -g breathecode-cli
-````
-
-##### 1. Comienza con boilerplate de React
-```
-$ breathecode start:react-project
-```
-##### 2. Instala el /node_modules
-```
-$ npm install
-```
-##### 3. Ejecutar el servidor de desarrollo webpack.
-```
-$ npm run c9
-```
-
-¡Eso es! Tiempo para codificar.
-
-_"El momento más espantoso es siempre antes de empezar."_
-
--_Stephen King_
+> _"El momento más espantoso es siempre antes de empezar."_
+> -_Stephen King_
 
