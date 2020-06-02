@@ -2,10 +2,14 @@
 
 Tecnologias: HTML, CSS, JS, React, React Router and React Context API.
 
-Este ejemplo esta optimizado para grupos de dos o maximo tres estudiantes.
+![Meetup.com Clone](https://github.com/breatheco-de/exercise-meetup-clone-react/blob/master/preview.png?raw=true)
+
+👆Este ejemplo esta optimizado para grupos de dos o máximo tres estudiantes.
 
 ¡Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez
 Crearemos una pequeña aplicación de Meetup.com que permita a los usuarios navegar y confirmar eventos, muy similar a cómo funciona Meetup.com.
+
+📹[Video completo de como debe funcionar la aplicacion aqui.](https://github.com/breatheco-de/exercise-meetup-clone-react/blob/master/preview.webm?raw=true)
 
 - **Event**'s  son la entidad central en el sistema, la vista principal (Home) tendrá una lista de **Event**'s organizado por fechas.
 - Cada **Event** esta vinculado _a single **Meetup**_.
