@@ -129,7 +129,7 @@ In order to have access to the global data from your store in one of your compon
 
 ```jsx
 
-import Context from '/path/to/store/appContext.jsx';
+import { Context } from '/path/to/store/appContext.jsx';
 
 const MyView = () => {
     const { actions, store } = useContext(Context);
