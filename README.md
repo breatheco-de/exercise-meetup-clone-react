@@ -144,22 +144,21 @@ All of your Fetch/AJAX calls should be in the `useEffect()` section of the `appC
 
 Do not clone this repository.
 
-The first step to start coding is cloning the [react boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or gitpod.
+1. The first step to start coding is cloning the [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) on your local computer or gitpod.
 
-a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello).
+a) If using Gitpod (recomendada) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello-webapp).
 
-b) If working locally type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
+b) If working locally type the following command from your command line: 
+```sh
+$ git clone https://github.com/4GeeksAcademy/react-hello-webapp
+```
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
-![image](https://user-images.githubusercontent.com/63673743/112887987-2edce280-90aa-11eb-8de6-b410a817447a.png)
-
-
-### Steps to use the boilerplate with Gitpod
-
-1. Create a new project using the React Flux boilerplate.
 2. Install the dependencies `$ npm install`.
+
 3. Run the WebPack development `$ npm run start`.
+
 4. That's it! Time to code.
 
 > _"The scariest moment is always before you start"_

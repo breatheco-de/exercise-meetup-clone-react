@@ -128,11 +128,23 @@ const MyView = () => {
 
 Todo tu Fetch/AJAX estará en la sección `useEffect()` del archivo appContext.jsx.
 
-### ¿Como empezar?
+## 🌱  Cómo iniciar este proyecto
 
-1. Comienza con el boilerplate (plantilla) de **React FLUX**.
+1. No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) en tu compjutador local o con Gitpod.
+
+a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://github.com/4GeeksAcademy/react-hello-webapp).
+
+b) Si trabajas localmente, escribe el siguiente comando en tu terminal: 
+```sh
+git clone https://github.com/4GeeksAcademy/react-hello-webapp
+````
+
+💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
+
 2. Instala las dependencias del projecto con `$ npm install`
+
 3. Ejecuta el servidor de desarrollo de webpack con `$ npm run start`
+
 4. ¡Listo! Empieza a trabajar.
 
 > _"El momento más espantoso es siempre antes de empezar."_
