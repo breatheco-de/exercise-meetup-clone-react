@@ -144,11 +144,14 @@ All of your Fetch/AJAX calls should be in the `useEffect()` section of the `appC
 
 Do not clone this repository.
 
-The first step to start coding is cloning the [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) on your local computer or gitpod.
+1. The first step to start coding is cloning the [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) on your local computer or gitpod.
 
-a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello-webapp).
+a) If using Gitpod (recomendada) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello-webapp).
 
-b) If working locally type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello-webapp`.
+b) If working locally type the following command from your command line: 
+```sh
+$ git clone https://github.com/4GeeksAcademy/react-hello-webapp
+```
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
