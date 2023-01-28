@@ -1,15 +1,17 @@
+<!--hide-->
 # Meetup Clone with Context API
+<!--endhide-->
 
 Technologies: HTML, CSS, JS, React, React Hooks, React Router and React Context API.
 
 ![Meetup.com Clone](https://github.com/breatheco-de/exercise-meetup-clone-react/blob/master/preview.png?raw=true)
 
-👆This project is optimized for groups of 2 or max 3 students.
+👆 This project is optimized for groups of 2 or max 3 students.
 
 Hello! It is time to begin creating professional front-end applications. This time
 we will be building a small Meetup.com clone that allows users to Browse and RSVP events, very similar to how Meetup.com works.
 
-📹[Here is a video on how the application must work](https://github.com/breatheco-de/exercise-meetup-clone-react/blob/master/preview.webm?raw=true)
+📹 [Here is a video on how the application must work](https://github.com/breatheco-de/exercise-meetup-clone-react/blob/master/preview.webm?raw=true)
 
 - **Event**'s is the main Entity on this application, the main view (Home) will have a list of **Event**'s organized by date.
 - Each **Event** is linked to _a single **Group**_.
@@ -17,7 +19,7 @@ we will be building a small Meetup.com clone that allows users to Browse and RSV
 
 ## This project is meant to be done in two phases
 
-First we want to focus on the visuals, make sure the viewable structures are working correctly. 
+First, we want to focus on the visuals; make sure the viewable structures are working correctly. 
 Secondly, we should implement dynamic data display.
 
 ### Phase 1: Create the views, then link them with React Router in your Layout Component.
@@ -52,7 +54,7 @@ Each **Event** Entity must have
 
 After you finish your wireframes, get to coding. Please make sure to only use functional components and if you need to define state variables or do something during the component lifecycle, use the corresponding hooks. (`useState()` and `useEffect()`)
 
-***Note:*** Think DRY (Don't repeat yourself) and declare only ***one*** component and use ```props``` to handle similar structure but different content. Context should be used only when you need to share data between many views. Always use props when you can and context sparingly.
+***Note:*** Think DRY (Don't repeat yourself) and declare only ***one*** component and use ```props``` to handle a similar structure but different content. Context should be used only when you need to share data between many views. Always use props when you can and context sparingly.
 
 ***REMEMBER:*** Anchor tags will cause a redirect, which you don't want in React. Be sure to import and use the ```Link``` component from React Router to implement the navigation between views.
 
@@ -146,9 +148,9 @@ Do not clone this repository.
 
 1. The first step to start coding is cloning the [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) on your local computer or gitpod.
 
-a) If using Gitpod (recomendada) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello-webapp).
+a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello-webapp).
 
-b) If working locally type the following command from your command line: 
+b) If working locally, type the following command from your command line: 
 ```sh
 $ git clone https://github.com/4GeeksAcademy/react-hello-webapp
 ```
