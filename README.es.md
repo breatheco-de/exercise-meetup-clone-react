@@ -1,10 +1,12 @@
-# Meetup Clone with Context API
+<!--hide-->
+# Clon de Meetup con API de contexto
+<!--endhide-->
 
-Tecnologias: HTML, CSS, JS, React, React Router and React Context API.
+Tecnologías: HTML, CSS, JS, React, React Router and React Context API.
 
 ![Meetup.com Clone](https://github.com/breatheco-de/exercise-meetup-clone-react/blob/master/preview.png?raw=true)
 
-👆Este ejemplo esta optimizado para grupos de dos o máximo tres estudiantes.
+👆 Este ejemplo esta optimizado para grupos de dos o máximo tres estudiantes.
 
 ¡Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez
 Crearemos una pequeña aplicación de Meetup.com que permita a los usuarios navegar y confirmar eventos, muy similar a cómo funciona Meetup.com.
@@ -33,14 +35,14 @@ Usa contenido/data ficticia inicialmente, lo importante es que se vea bien.
 En Meetup.com, Meetups son los grupos u organizaciones anfitrionas de los eventos. 
 
 ##### Cada Meetup debe tener:
-- Titulo
+- Título
 - Descripción
 
 
 En contraste, los eventos son los eventos específicos que el grupo está organizando durante el mes. 
 
 ##### Cada Evento debe tener:
-- Titulo
+- Título
 - Descripción
 - Fecha
 - Hora
@@ -61,7 +63,7 @@ RECUERDA: Las etiquetas `<a>` provocarán un redireccionamiento, que no deseas e
 
 ### Fase 2: dinamizar la aplicación implementando React Context.
 
-***Utiliza el store para rellenar el contenido ficticio *** dentro de las vistas/componentes. Se puede acceder a el store utilizando el ```Context.Consumer```
+***Utiliza el store para rellenar el contenido ficticio *** dentro de las vistas/componentes. Se puede acceder al store utilizando el ```Context.Consumer```
 
 ##### Referencia: Usando el Context
 
@@ -130,7 +132,7 @@ Todo tu Fetch/AJAX estará en la sección `useEffect()` del archivo appContext.j
 
 ## 🌱  Cómo iniciar este proyecto
 
-1. No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) en tu compjutador local o con Gitpod.
+1. No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) en tu computador local o con Gitpod.
 
 a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://github.com/4GeeksAcademy/react-hello-webapp).
 
@@ -141,7 +143,7 @@ git clone https://github.com/4GeeksAcademy/react-hello-webapp
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
-2. Instala las dependencias del projecto con `$ npm install`
+2. Instala las dependencias del proyecto con `$ npm install`
 
 3. Ejecuta el servidor de desarrollo de webpack con `$ npm run start`
 
