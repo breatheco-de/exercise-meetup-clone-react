@@ -9,6 +9,7 @@
 	"technologies": ["react.js", "html/css"],
 	"syntax": "react.js",
 	"duration" : 36,
+	"template_url": "https://github.com/4GeeksAcademy/react-hello-webapp"
 	"description" : "Use React and HTTP Fetch to create a Meetup.com clone",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },
