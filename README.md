@@ -146,24 +146,25 @@ All of your Fetch/AJAX calls should be in the `useEffect()` section of the `appC
     
 ## 🌱  How to start this project
 
-Do not clone this repository.
+We recommend opening the `react flux boilerplate`, using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can [clone the GitHub repository](https://4geeks.com/how-to/github-clone-repository) on your local computer using the `git clone` command.
 
-1. The first step to start coding is cloning the [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) on your local computer or gitpod.
+This is the repository you need to open or clone:
 
-a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello-webapp).
-
-b) If working locally, type the following command from your command line: 
 ```sh
 $ git clone https://github.com/4GeeksAcademy/react-hello-webapp
 ```
 
+Do not clone this repository.
+
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
-2. Install the dependencies `$ npm install`.
+### Steps
 
-3. Run the WebPack development `$ npm run start`.
+1. Install the dependencies `$ npm install`.
 
-4. That's it! Time to code.
+2. Run the WebPack development `$ npm run start`.
+
+3. That's it! Time to code.
 
 > _"The scariest moment is always before you start"_
 > _Stephen King_

@@ -134,22 +134,27 @@ Todo tu Fetch/AJAX estará en la sección `useEffect()` del archivo appContext.j
 	
 ## 🌱  Cómo iniciar este proyecto
 
-1. No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) en tu computador local o con Gitpod.
+No clones este repositorio porque usaremos una plantilla diferente.  
 
-a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://github.com/4GeeksAcademy/react-hello-webapp).
+Recomendamos abrir el `react flux boilerplate`, utilizando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/es/lesson/tutorial-de-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternativamente, puedes clonar el repositorio de [GitHub](https://4geeks.com/es/how-to/como-clonar-un-repositorio-de-github) en tu computadora local utilizando el comando `git clone`.  
 
-b) Si trabajas localmente, escribe el siguiente comando en tu terminal: 
+Este es el repositorio que necesitas abrir o clonar:  
+
 ```sh
-git clone https://github.com/4GeeksAcademy/react-hello-webapp
-````
+$ git clone https://github.com/4GeeksAcademy/react-hello-webapp
+```
+
+1. No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react flux boilerplate](https://github.com/4GeeksAcademy/react-hello-webapp) en tu computador local o con Gitpod.
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
-2. Instala las dependencias del proyecto con `$ npm install`
+### Pasos
 
-3. Ejecuta el servidor de desarrollo de webpack con `$ npm run start`
+1. Instala las dependencias del proyecto con `$ npm install`
 
-4. ¡Listo! Empieza a trabajar.
+2. Ejecuta el servidor de desarrollo de webpack con `$ npm run start`
+
+3. ¡Listo! Empieza a trabajar.
 
 > _"El momento más espantoso es siempre antes de empezar."_
 > -_Stephen King_
