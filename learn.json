@@ -13,8 +13,8 @@
 	"syntax": "react.js",
 	"duration" : 36,
 	"description" : {
-		"es":"Crea un script para respaldar un sitio web WordPress, incluyendo los archivos y la base de datos. El script debe generar un archivo comprimido con todos los respaldos realizados. Este proyecto debe ejecutarse en un sistema Debian con WordPress desplegado.",
-		"us":"Crea un clon de Meetup.com usando React, React Hooks y Context API. Implementa la navegación de eventos, funcionalidad de RSVP y asociaciones de grupos. Utiliza React Router para la navegación y muestra datos dinámicamente con Context."
+		"es":"Crea un clon de Meetup.com usando React, React Hooks y Context API. Implementa la navegación de eventos, funcionalidad de RSVP y asociaciones de grupos. Utiliza React Router para la navegación y muestra datos dinámicamente con Context.",
+		"us":"Build a Meetup.com clone using React, React Hooks, and Context API. Implement event browsing, RSVP functionality, and group associations. Use React Router for navigation and fetch data dynamically with Context."
 	},
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },
